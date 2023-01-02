@@ -57,7 +57,7 @@
 }
 
 .hero {
-    background: url('/img/background/background-hero.jpg') no-repeat center top;
+    background: url('/Healthy-switcher/img/background/background-hero.jpg') no-repeat center top;
     background-size: cover;
     height: auto;
     min-height: 800px;
@@ -68,6 +68,10 @@
 .intro {
     margin: 160px auto 0;
     text-align: center;
+
+    &__texts {
+        max-width: 1100px;
+    }
 
     &__title {
         margin-bottom: 16px;
