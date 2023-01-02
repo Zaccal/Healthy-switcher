@@ -1,0 +1,43 @@
+$green: #34C759;
+$greenHover: #307942;
+$black: #181818;
+$blackTrans: rgb(48, 48, 48);
+$lightGray: #737373;
+$darkGray: #252525; 
+$fontRoman: 'Helvetica roman 55';
+$fontBlack: 'Helvetica black';
+$fontBold: 'Helvetica bold';
+
+%cfg-flex {
+    display: flex;
+    justify-content: space-between;
+} 
+
+%cfg-flex-aline {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+} 
+
+@mixin Button($width, $height) {
+    width: $width;
+    height: $height;
+    border-radius: 43px;
+    background-color: $green;
+    color: $black;
+    font-family: $fontRoman, sans-serif;
+    font-weight: 700;
+    transition: 0.5s all;
+
+    &:hover {
+        background-color: $greenHover;
+    }
+}
+
+@mixin cfg-animate($animate-name) {
+    opacity: 0;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-name: $animate-name;
+    animation-fill-mode: forwards;
+}

@@ -1,0 +1,38 @@
+/* fonts start */
+
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Roboto:wght@400;700&display=swap');
+
+@font-face {
+    font-family: 'Helvetica roman 55';
+    src: url('BMWHelvetica-Roman.woff2') format('woff2'),
+        url('BMWHelvetica-Roman.woff') format('woff'),
+        url('BMWHelvetica-Roman.ttf') format('truetype'),
+        url('BMWHelvetica-Roman.svg#BMWHelvetica-Roman') format('svg');
+    font-weight: 500;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica black';
+    src: url('HelveticaNeueBlackCondensed.woff2') format('woff2'),
+        url('HelveticaNeueBlackCondensed.woff') format('woff'),
+        url('HelveticaNeueBlackCondensed.ttf') format('truetype'),
+        url('HelveticaNeueBlackCondensed.svg#HelveticaNeueBlackCondensed') format('svg');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Helvetica bold';
+    src: url('HelveticaNeueBoldCondensed.woff2') format('woff2'),
+        url('HelveticaNeueBoldCondensed.woff') format('woff'),
+        url('HelveticaNeueBoldCondensed.ttf') format('truetype'),
+        url('HelveticaNeueBoldCondensed.svg#HelveticaNeueBoldCondensed') format('svg');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* fonts start */

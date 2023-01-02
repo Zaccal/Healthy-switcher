@@ -1,0 +1,213 @@
+@import 'null.scss';
+@import 'vars.scss';
+
+/* Content start */
+
+.header {
+    padding: 33px 0;
+    border-bottom: 2px solid rgba(255, 255, 255, 0.1);
+    width: 100%;
+    background: transparent;
+    position: absolute;
+    top: 0;
+}
+
+.header__container {
+    @extend %cfg-flex-aline;
+}
+
+.brand {
+    @extend %cfg-flex;
+    align-items: flex-end;
+
+    & .brand__text {
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        margin-left: 9px;
+        color: $green;
+        font-family: $fontBold, sans-serif;
+        font-weight: 700;
+    }
+}
+
+.menu__list {
+    @extend %cfg-flex-aline;
+
+    & .menu__item + .menu__item {
+        margin-left: 45px;
+    }
+
+    & .menu__link {
+        font-size: 14px;
+        font-family: $fontBold, sans-serif;
+        font-weight: bold;        
+
+        &_active {
+            color: $green;
+        }
+
+        &:hover {
+            color: $green;
+        }
+    }
+}
+
+.burger-btn, .burger-menu {
+    display: none;
+}
+
+.hero {
+    background: url('/img/background/background-hero.jpg') no-repeat center top;
+    background-size: cover;
+    height: auto;
+    min-height: 800px;
+    display: flex;
+    align-items: center;
+}
+
+.intro {
+    margin: 160px auto 0;
+    text-align: center;
+
+    &__title {
+        margin-bottom: 16px;
+        font-weight: 500;
+        font-size: 72px;
+        letter-spacing: 0.1em;
+        text-transform: capitalize;
+        line-height: 84px;
+
+        & span {
+            display: inline-block;
+            @include cfg-animate(animate__fadeInRightBig)
+        }
+
+        &-bold {
+            font-family: $fontBold, sans-serif;
+            font-weight: bold;
+        }
+    }
+
+    &__word {
+        &-one {
+            animation-delay: 0.5s;
+        }
+        &-two {
+            animation-delay: 0.8s;
+        }
+        &-three {
+            animation-delay: 1s;
+        }
+        &-four {
+            animation-delay: 1.3s;
+        }
+    }
+
+    &__subtitle {
+        margin: 0 auto 40px;
+        font-weight: 400;
+        letter-spacing: -0.2px;
+        line-height: 26px;
+        max-width: 595px;
+        opacity: 0.7;
+        animation-delay: 1.5s;
+
+        transform: translateY(10px);
+        @include cfg-animate(animate__fadeInUp-opacity-7)
+    }
+
+    &__btn-for-order {
+        transform: translateY(10px);
+        animation-delay: 2s;
+        @include cfg-animate(animate__fadeInUp-opacity-1);
+        @include Button(220px, 72px);
+    }
+
+    &__cards {
+        max-width: 915px;
+        margin: 70px auto;
+        // ToDo: add switcher turn on and turn off animtion in page
+
+        & div {
+            &:first-child {
+                transform: translateY(10px);
+                animation-delay: 2.5s;
+                @include cfg-animate(animate__fadeInUp-opacity-1);
+            }
+            &:nth-child(2) {
+                transform: translateY(10px);
+                animation-delay: 2.8s;
+                @include cfg-animate(animate__fadeInUp-opacity-1);
+            }
+            &:nth-child(3) {
+                transform: translateY(10px);
+                animation-delay: 3s;
+                @include cfg-animate(animate__fadeInUp-opacity-1);
+            }
+        }
+
+
+    }
+}
+
+@keyframes animate__fadeInRightBig {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes animate__fadeInUp-opacity-1 {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+@keyframes animate__fadeInUp-opacity-7 {
+    0% {
+        opacity: 0;
+        transform: translateY(10px);
+    }
+
+    100% {
+        opacity: 0.7;
+        transform: translateY(0px);
+    }
+}
+
+.cards {
+    @extend %cfg-flex-aline;
+}
+
+.benefits-card {
+    &__logo {
+        margin-bottom: 13px;
+    }
+
+    &__title {
+        margin-bottom: 10px;
+        font-weight: 400;
+        font-family: $fontRoman, sans-serif;
+    }
+
+    &__subtitle {
+        font-size: 14px;
+        opacity: 0.5;
+    }
+}
+
+/* Content end */
+
+@import 'adaptive.scss';
