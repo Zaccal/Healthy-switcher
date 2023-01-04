@@ -23,21 +23,21 @@
 /* fonts start */
 @font-face {
   font-family: "Helvetica roman 55";
-  src: url("Healthy-switcher/fonts/Helvetica/BMWHelvetica-Roman.woff2") format("woff2"), url("Healthy-switcher/fonts/Helvetica/BMWHelvetica-Roman.woff") format("woff"), url("Healthy-switcher/fonts/Helvetica/BMWHelvetica-Roman.ttf") format("truetype"), url("Healthy-switcher/fonts/Helvetica/BMWHelvetica-Roman.svg#BMWHelvetica-Roman") format("svg");
+  src: url("../fonts/Helvetica/BMWHelvetica-Roman.woff2") format("woff2"), url("../fonts/Helvetica/BMWHelvetica-Roman.woff") format("woff"), url("../fonts/Helvetica/BMWHelvetica-Roman.ttf") format("truetype"), url("../fonts/Helvetica/BMWHelvetica-Roman.svg#BMWHelvetica-Roman") format("svg");
   font-weight: 500;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Helvetica black";
-  src: url("Healthy-switcher/fonts/Helvetica/HelveticaNeueBlackCondensed.woff2") format("woff2"), url("Healthy-switcher/fonts/Helvetica/HelveticaNeueBlackCondensed.woff") format("woff"), url("Healthy-switcher/fonts/Helvetica/HelveticaNeueBlackCondensed.ttf") format("truetype"), url("Healthy-switcher/fonts/Helvetica/HelveticaNeueBlackCondensed.svg#HelveticaNeueBlackCondensed") format("svg");
+  src: url("../fonts/Helvetica/HelveticaNeueBlackCondensed.woff2") format("woff2"), url("../fonts/Helvetica/HelveticaNeueBlackCondensed.woff") format("woff"), url("../fonts/Helvetica/HelveticaNeueBlackCondensed.ttf") format("truetype"), url("../fonts/Helvetica/HelveticaNeueBlackCondensed.svg#HelveticaNeueBlackCondensed") format("svg");
   font-weight: 900;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "Helvetica bold";
-  src: url("Healthy-switcher/fonts/Helvetica/HelveticaNeueBoldCondensed.woff2") format("woff2"), url("Healthy-switcher/fonts/Helvetica/HelveticaNeueBoldCondensed.woff") format("woff"), url("Healthy-switcher/fonts/Helvetica/HelveticaNeueBoldCondensed.ttf") format("truetype"), url("Healthy-switcher/fonts/Helvetica/HelveticaNeueBoldCondensed.svg#HelveticaNeueBoldCondensed") format("svg");
+  src: url("../fonts/Helvetica/HelveticaNeueBoldCondensed.woff2") format("woff2"), url("../fonts/Helvetica/HelveticaNeueBoldCondensed.woff") format("woff"), url("../fonts/Helvetica/HelveticaNeueBoldCondensed.ttf") format("truetype"), url("../fonts/Helvetica/HelveticaNeueBoldCondensed.svg#HelveticaNeueBoldCondensed") format("svg");
   font-weight: bold;
   font-style: normal;
   font-display: swap;
