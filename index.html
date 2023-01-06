@@ -13,8 +13,9 @@
     <!-- SEO end -->
     
     <!-- Extends start -->
-    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css">
+    <link rel="stylesheet" href="https://necolas.github.io/normalize.css/8.0.1/normalize.css">
     <!-- Extends end -->
 
     <title>Health Switcher - Your favourite food delivered hot & fresh</title>
@@ -62,8 +63,9 @@
                             <span class="intro__word-three">delivered</span> 
                             <span class="intro__word-four intro__title-bold">hot & fresh</span>
                         </h1>
-                        <p class="intro__subtitle">
-                            HEALTHY SWITCHER chefs do all the prep work, like peeling, chopping & marinating, so you can cook a fresh homemade dinner in just 15 minutes.
+                        <p class="intro__subtitle subtitle">
+                            HEALTHY SWITCHER chefs do all the prep work, like peeling, chopping & marinating, so you can cook a fresh 
+                            homemade dinner in just 15 minutes.
                         </p>
                         <button class="intro__btn-for-order">Order now</button>
                     </div>
@@ -85,11 +87,48 @@
                         </div>
                     </div>
                 </div>
+                <div class="about">
+                    <div class="about__container">
+                        <h2 class="about__title animate animate-toggle" background-text="About"><span>The Basics Of Healthy Food</span></h2>
+                        <p class="about__subtitle subtitle">
+                            In aliqua ea ullamco ad est ex non deserunt nulla. Consectetur sint ea aliquip aliquip consectetur voluptate est. 
+                            Eu minim dolore laboris enim mollit voluptate irure esse aliquip.
+                        </p> 
+                        
+                        <div class="slider-wrapper">
+                            <div class="slider swiper">
+                                <div class="swiper-wrapper">
+                                    <div class="slider__slide swiper-slide">
+                                        <img src="./img/items/slide-img.jpg" alt="slide-item-img">
+                                    </div>
+                                    <div class="slider__slide swiper-slide">
+                                        <img src="./img/items/slide-img-1.jpg" alt="slide-item-img">
+                                    </div>
+                                    <div class="slider__slide swiper-slide">
+                                        <img src="./img/items/slide-img.jpg" alt="slide-item-img">
+                                    </div>
+                                    <div class="slider__slide swiper-slide">
+                                        <img src="./img/items/slide-img-1.jpg" alt="slide-item-img">
+                                    </div>
+                                </div>                        
+                            </div>
+                            <div class="slider__btn slider__button-prev">
+                                <img src="./img/icons/prev-arrow-icon.svg" alt="">
+                            </div>
+                            <div class="slider__btn slider__button-next">
+                                <img src="./img/icons/next-arrow-icon.svg" alt="">
+                            </div>
+
+                            <div class="slider__pagination swiper-pagination"></div>
+                        </div>
+
+                    </div>
+                </div>
             </div>
         </section>
-        <section style="height: 10000px;">Hello World!</section>
     </main>
 
-    <script defer src="./js/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+    <script defer type="module" src="./js/main.js"></script>
 </body>
 </html>
