@@ -3,7 +3,15 @@
 /* Adaptive start */
 // with max width to min width
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1143px) {
+    .work__cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 1051px) {
     .slider {
         height: 365px;
 
@@ -16,6 +24,10 @@
         &__pagination {
             display: block;
         }
+    }
+
+    .work-steps-card__subtitle {
+        max-width: 207px;
     }
 }
 
@@ -256,6 +268,13 @@
     }
 
     /* About section end */ 
+
+    .title {
+        font-size: 30px;
+        &::before {
+            font-size: 94px;
+        }
+    }
 }
 
 @media screen and (max-width: 634px) {
@@ -282,6 +301,12 @@
     .intro__title {
         font-size: 45px;
         line-height: 57px;
+    }
+}
+
+@media screen and (max-width: 581px) {
+    .work__cards {
+        grid-template-columns: repeat(1, 1fr);
     }
 }
 
@@ -324,6 +349,15 @@
     
     .burger-menu__link {
         font-size: 27px;
+    }
+}
+
+@media screen and (max-width: 458px) {
+    .title {
+        font-size: 26px;
+        &::before {
+            font-size: 80px;
+        }
     }
 }
 

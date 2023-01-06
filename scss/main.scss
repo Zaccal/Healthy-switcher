@@ -58,8 +58,8 @@
 }
 
 .hero {
+    padding-top: 0;
     background: url('../img/background/background-hero.jpg') no-repeat center top;
-    // background: url('/Healthy-switcher/img/background/background-hero.jpg') no-repeat center top;
     background-size: cover;
     height: auto;
     min-height: 800px;
@@ -96,7 +96,7 @@
 
         & span {
             display: inline-block;
-            @include cfg-animate(animate__fadeInRightBig)
+            @include cfg-animate(animate__fadeInUp)
         }
 
         &-bold {
@@ -131,26 +131,25 @@
     &__btn-for-order {
         transform: translateY(10px);
         animation-delay: 2s;
-        @include cfg-animate(animate__fadeInUp-opacity-1);
+        @include cfg-animate(animate__fadeInUp);
         @include Button(220px, 72px);
     }
 
     &__cards {
         max-width: 915px;
         margin: 70px auto;
-        // ToDo: add switcher turn on and turn off animtion in page
         &.animate__show div {
             &:first-child {
-                animation-delay: 0.5s;
-                @include cfg-animate(animate__fadeInUp-opacity-1);
+                animation-delay: 0.1s;
+                @include cfg-animate(animate__fadeInUp);
             }
             &:nth-child(2) {
-                animation-delay: 0.8s;
-                @include cfg-animate(animate__fadeInUp-opacity-1);
+                animation-delay: 0.4s;
+                @include cfg-animate(animate__fadeInUp);
             }
             &:nth-child(3) {
-                animation-delay: 1s;
-                @include cfg-animate(animate__fadeInUp-opacity-1);
+                animation-delay: 0.7s;
+                @include cfg-animate(animate__fadeInUp);
             }
         }
     }
@@ -209,6 +208,9 @@
         & span {
             position: relative;
             z-index: 1;
+            // For animate styles
+            opacity: 0;
+            transform: translateY(10px);
         }
 
         &::after {
@@ -230,8 +232,13 @@
         // Animation
 
         &.animate__show {
-            animation-delay: 0.7ms;
-            @include cfg-animate(animate__fadeInUp-opacity-1)
+            & span {
+                animation-delay: 0.4s;
+                @include cfg-animate(animate__fadeInUp)
+            }
+
+            animation-delay: 0.1s;
+            @include cfg-animate(animate__fadeInUp)
         }
     }
 
@@ -275,6 +282,112 @@
     &__pagination {
         display: none;
         bottom: -40px !important;
+    }
+}
+
+.title {
+    text-align: center;
+    padding-bottom: 27px;
+    margin-bottom: 60px;
+
+    font-family: $fontRoman, sans-serif;
+    font-weight: 400;
+    letter-spacing: 0.2em;
+    font-size: 36px;
+    line-height: 90px;
+    text-transform: capitalize;
+    position: relative;
+
+    & span {
+        position: relative;
+        z-index: 1;
+    }
+
+    &::before {
+        content: attr(background-text);
+        z-index: 0;
+        position: absolute;
+        top: -25%;
+        left: 50%;
+        transform: translateX(-50%);
+        font-family: $fontBlack, sans-serif;
+        color: #303030;
+        font-size: 100px;
+        line-height: 150px;
+        letter-spacing: 0.2em;
+    }
+
+    &::after {
+        content: "";
+        position: absolute;
+        bottom: 0;
+        left: 50%;
+        transform: translateX(-50%);
+        width: 60px;
+        height: 2px;
+        background-color: $green;
+    }
+}
+
+.work__cards {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-gap: 30px;
+}
+
+.work-steps-card {
+    padding: 24px 24px 60px;
+    background-color: $darkGray;
+    box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 6px;
+    max-width: 255px;
+    max-height: 206px;
+
+    &__title {
+        font-weight: 400;
+        font-size: 22px;
+        line-height: 26px;
+        letter-spacing: -0.275px;
+        text-transform: capitalize;
+        color: #fff;
+        padding-bottom: 20px;
+        margin-bottom: 24px;
+        position: relative;
+
+        &::before {
+            content: "";
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            height: 2px;
+            width: 56px;
+            background-color: $green;
+        }
+    }
+
+    &__subtitle {
+        font-weight: 400;
+        font-size: 13px;
+        line-height: 18px;
+        letter-spacing: -0.1625px;
+        color: rgba(255, 255, 255, 0.5);
+    }
+
+    &_selected {
+        background-color: $green;
+        & .work-steps-card__title, .work-steps-card__subtitle {
+            color: #191919;
+            &::before {
+                background-color: #191919;
+            }
+        }
+    }
+
+    // Animation styles
+    opacity: 0;
+
+    &.animate__show {
+        @include cfg-animate(animate__fadeInUp);
     }
 }
 

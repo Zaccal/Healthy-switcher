@@ -9,7 +9,7 @@
 }
 
 body {
-    background-color: $black;
+    background-color: #191919;
     font-size: 16px;
     color: #fff;
 
@@ -28,9 +28,14 @@ body {
     display: none;
 }
 
+section {
+    padding-top: 91px;
+}
+
 h1, h2, h3, h4, h5, h6, p {
     margin: 0;
     padding: 0;
+    color: #D9D9D9;
 }
 
 a {
@@ -53,6 +58,25 @@ input {
 button { 
     cursor: pointer;
     border: 0;
+}
+
+.animate {
+    &_one {
+        animation-delay: 0.1s;
+    }
+    &_two {
+        animation-delay: 0.3s;
+    }
+    &_three {
+        animation-delay: 0.5s;
+    }
+    &_four {
+        animation-delay: 0.7s;
+    }
+}
+
+.animate__hidden {
+    @include cfg-animate(animate__fadeInUp-end);
 }
 
 /* null end */
