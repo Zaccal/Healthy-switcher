@@ -17,8 +17,12 @@ const observerAnimate = new IntersectionObserver((entries) => {
     entries.forEach(entry => {
         const toggleOption = Array.from(entry.target.classList).includes('animate-toggle')
 
-        if (toggleOption && !entry.isIntersecting) {
-            entry.target.classList.toggle('animate__show')
+        if (toggleOption && entry.isIntersecting) {
+            entry.target.classList.add('animate__show')
+        }
+
+        else if (toggleOption && !entry.isIntersecting) {
+            entry.target.classList.remove('animate__show')
         }
 
         if (entry.isIntersecting) {
@@ -32,7 +36,6 @@ const observerAnimate = new IntersectionObserver((entries) => {
 const animateElements = document.querySelectorAll('.animate')
 
 animateElements.forEach(animateElement => observerAnimate.observe(animateElement))
-animateElements.forEach(animateElement => observeAnimateHidden.observe(animateElement))
 
 
 // Slider

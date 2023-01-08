@@ -38,6 +38,13 @@
     }
 }
 
+@media screen and (max-width: 968px) {
+    .dishe__cards {
+        grid-template-columns: repeat(2, 1fr);
+        justify-items: center;
+    }
+}
+
 @media screen and (max-width: 904px) {
     .about__container {
         margin: 0 auto;
@@ -74,6 +81,13 @@
             &::after {
                 font-size: 90px;
             }
+        }
+    }
+
+    .slider__slide {
+        border-radius: 10px;
+        & img {
+            border-radius: 10px;
         }
     }
 }
@@ -209,7 +223,18 @@
     }
 }
 
+@media screen and (max-width: 684px) {
+    .dishe__cards {
+        grid-template-columns: 1fr;
+    }
+}
 
+@media screen and (max-width: 677px) {
+    .intro__btn-for-order {
+        width: 209px;
+        height: 67px;
+    }
+}
 
 @media screen and (max-width: 652px) {
     .header { padding: 23px 0; }
@@ -281,7 +306,7 @@
     /* About section start */
 
     .about__container {
-        padding: 90px 54px 75px;
+        padding: 85px 20px 75px;
     }
 
     /* About section end */
@@ -319,6 +344,11 @@
         }
         &__subtitle {
             margin-left: 0;
+        }
+
+        &__btn-for-order {
+            width: 200px;
+            height: 65px;
         }
     }
 }
@@ -369,12 +399,13 @@
         }
 
         &__subtitle {
+            margin-bottom: 36px;
             font-size: 14px;
         }
 
         &__btn-for-order {
             width: 150px;
-            height: 61px;
+            height: 58px;
         }
     }
 
@@ -445,6 +476,19 @@
     }
 }
 
+@media screen and (max-width: 356px) {
+    .dish-card {
+        &__container {
+            flex-direction: column;
+        }
+
+        &__btn-for-order {
+            width: 100%;
+            margin-top: 10px;
+        }
+    }
+}
+
 @media screen and (max-width: 344px) {
     .burger-menu__list {
         margin: 50% auto;
@@ -452,8 +496,17 @@
     
     .intro {
         &__btn-for-order {
-            width: 145px;
-            height: 59px;
+            width: 143px;
+            height: 55px;
+        }
+    }
+}
+
+@media screen and (max-width: 330px) {
+    .dishe__title {
+        font-size: 23px;
+        &::before {
+            font-size: 74px;
         }
     }
 }

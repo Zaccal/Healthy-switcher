@@ -8,7 +8,7 @@
           justify-content: space-between;
 }
 
-.cards, .menu__list, .header__container {
+.rating, .dish-card__container, .cards, .menu__list, .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -221,7 +221,7 @@ button {
           justify-content: space-between;
 }
 
-.cards, .menu__list, .header__container {
+.rating, .dish-card__container, .cards, .menu__list, .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -582,6 +582,8 @@ button {
   line-height: 90px;
   text-transform: capitalize;
   position: relative;
+  color: #D9D9D9;
+  opacity: 0;
 }
 .title span {
   position: relative;
@@ -611,6 +613,32 @@ button {
   width: 60px;
   height: 2px;
   background-color: #34C759;
+}
+.title.animate__show {
+  -webkit-animation-delay: 0.1s;
+          animation-delay: 0.1s;
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-name: animate__fadeInUp;
+          animation-name: animate__fadeInUp;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+.title.animate__show span {
+  -webkit-animation-delay: 0.3s;
+          animation-delay: 0.3s;
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-name: animate__fadeInUp;
+          animation-name: animate__fadeInUp;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
 }
 
 .work__cards {
@@ -668,6 +696,8 @@ button {
   background-color: #191919;
 }
 .work-steps-card.animate__show {
+  -webkit-animation-delay: 0.8s;
+          animation-delay: 0.8s;
   opacity: 0;
   -webkit-animation-duration: 1s;
           animation-duration: 1s;
@@ -677,6 +707,102 @@ button {
           animation-name: animate__fadeInUp;
   -webkit-animation-fill-mode: forwards;
           animation-fill-mode: forwards;
+}
+
+.dishe__cards {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+
+.dish-card {
+  -webkit-box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+          box-shadow: 0px 2px 5px rgba(0, 0, 0, 0.1);
+  border-radius: 6px;
+  background-color: #252525;
+  max-width: 350px;
+}
+.dish-card__preview {
+  width: 100%;
+  border-top-right-radius: 6px;
+  border-top-left-radius: 6px;
+}
+.dish-card__content {
+  padding: 30px 30px 24px;
+}
+.dish-card__title {
+  font-weight: 400;
+  font-size: 27px;
+  line-height: 30px;
+  color: #D9D9D9;
+}
+.dish-card__title-text {
+  margin-top: 9px;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  letter-spacing: -0.15px;
+  color: #A4A8B2;
+}
+.dish-card__subtitle {
+  margin-top: 20px;
+  font-size: 13px;
+  letter-spacing: -0.1625px;
+}
+.dish-card__btn-for-order {
+  font-size: 10px;
+  width: 100px;
+  height: 40px;
+  border-radius: 43px;
+  background-color: #34C759;
+  color: #181818;
+  font-family: "Helvetica roman 55", sans-serif;
+  font-weight: 700;
+  -webkit-transition: 0.5s all;
+  transition: 0.5s all;
+}
+.dish-card__btn-for-order_disabled {
+  background: transparent;
+  color: rgba(255, 255, 255, 0.5);
+  border: 2px solid #303030;
+}
+.dish-card__btn-for-order_disabled:hover {
+  color: #252525;
+  background: #34C759;
+  border: 0;
+}
+.dish-card__btn-for-order:hover {
+  background-color: #307942;
+}
+
+.rating {
+  max-width: 151px;
+}
+.rating__star {
+  cursor: pointer;
+}
+.rating__star + .rating__star {
+  margin-left: 5px;
+}
+.rating__star ion-icon {
+  width: 17px;
+  height: 17px;
+  color: #F9AD3D;
+}
+.rating__count {
+  margin-left: 9px;
+}
+.rating__count span {
+  font-family: "Helvetica black", sans-serif;
+  font-size: 12px;
+  line-height: 30px;
+  letter-spacing: 1.5px;
+  color: #B3B3B3;
+}
+.rating_disabled ion-icon {
+  color: #4D4D4D;
 }
 
 /* Content end */
@@ -689,7 +815,7 @@ button {
           justify-content: space-between;
 }
 
-.header__container, .menu__list, .cards {
+.header__container, .menu__list, .cards, .dish-card__container, .rating {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -732,6 +858,13 @@ button {
     line-height: 74px;
   }
 }
+@media screen and (max-width: 968px) {
+  .dishe__cards {
+    -ms-grid-columns: 1fr 30px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    justify-items: center;
+  }
+}
 @media screen and (max-width: 904px) {
   .about__container {
     margin: 0 auto;
@@ -762,6 +895,12 @@ button {
   }
   .about__title::after {
     font-size: 90px;
+  }
+  .slider__slide {
+    border-radius: 10px;
+  }
+  .slider__slide img {
+    border-radius: 10px;
   }
 }
 @media screen and (max-wdith: 700px) {
@@ -875,6 +1014,18 @@ button {
     max-width: 497px;
   }
 }
+@media screen and (max-width: 684px) {
+  .dishe__cards {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+}
+@media screen and (max-width: 677px) {
+  .intro__btn-for-order {
+    width: 209px;
+    height: 67px;
+  }
+}
 @media screen and (max-width: 652px) {
   .header {
     padding: 23px 0;
@@ -931,7 +1082,7 @@ button {
 @media screen and (max-width: 634px) {
   /* About section start */
   .about__container {
-    padding: 90px 54px 75px;
+    padding: 85px 20px 75px;
   }
   /* About section end */
 }
@@ -963,6 +1114,10 @@ button {
   }
   .intro__subtitle {
     margin-left: 0;
+  }
+  .intro__btn-for-order {
+    width: 200px;
+    height: 65px;
   }
 }
 @media screen and (max-width: 555px) {
@@ -1000,11 +1155,12 @@ button {
     line-height: 52px;
   }
   .intro__subtitle {
+    margin-bottom: 36px;
     font-size: 14px;
   }
   .intro__btn-for-order {
     width: 150px;
-    height: 61px;
+    height: 58px;
   }
   .benefits-card__title {
     font-size: 16px;
@@ -1054,13 +1210,33 @@ button {
     line-height: 48px;
   }
 }
+@media screen and (max-width: 356px) {
+  .dish-card__container {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .dish-card__btn-for-order {
+    width: 100%;
+    margin-top: 10px;
+  }
+}
 @media screen and (max-width: 344px) {
   .burger-menu__list {
     margin: 50% auto;
   }
   .intro__btn-for-order {
-    width: 145px;
-    height: 59px;
+    width: 143px;
+    height: 55px;
+  }
+}
+@media screen and (max-width: 330px) {
+  .dishe__title {
+    font-size: 23px;
+  }
+  .dishe__title::before {
+    font-size: 74px;
   }
 }
 /* height adaptive start */
