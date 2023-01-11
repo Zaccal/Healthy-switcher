@@ -418,6 +418,36 @@
     border-radius: 6px;
     background-color: $darkGray;
     max-width: 350px;
+    position: relative;
+    &__share {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        cursor: pointer;
+        position: absolute;
+        margin-left: 24px;
+        margin-right: 24px;
+        right: 0;
+        top: 24px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        & img {
+            position: relative;
+            z-index: 1;
+        }
+
+        &-bg {
+            position: absolute;
+            border-radius: 50%;
+            width: 100%;
+            height: 100%;
+            opacity: 0.3;
+            background-color: #000;
+        }
+    }
+
     &__preview {
         width: 100%;
         border-top-right-radius: 6px;
@@ -469,7 +499,14 @@
 
         }
 
-        @include Button(100px, 40px)
+        @include Button(100px, 40px);
+    }
+
+    // Animation styles
+    opacity: 0;
+
+    &.animate__show {
+        @include cfg-animate(animate__fadeInUp);
     }
 }
 
@@ -504,6 +541,58 @@
 
     &_disabled ion-icon  {
         color: #4D4D4D;
+    }
+}
+
+.people-chefs {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 30px;
+}
+
+.chef-card {
+    &__header {
+        max-width: 205px;
+        margin-bottom: 24px;
+        @extend %cfg-flex-aline;
+    }
+
+    &__avatar {
+        border-radius: 50%;
+        width: 65px;
+        height: 65px;
+        margin-right: 24px;
+    }
+
+    &__fullname {
+        font-weight: 400;
+        font-size: 16px;
+        line-height: 21px;
+        letter-spacing: -0.225px;
+        color: #FFFFFF;
+    }
+
+    &__subtitle {
+        font-size: 12px;
+        margin: 0;
+    }
+
+    &__portfolio {
+        max-width: 350px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-gap: 30px;
+
+        & img {
+            border-radius: 4px;
+        } 
+    }
+
+    // Animation styles
+    opacity: 0;
+
+    &.animate__show {
+        @include cfg-animate(animate__fadeInUp);
     }
 }
 

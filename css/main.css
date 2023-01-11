@@ -8,7 +8,7 @@
           justify-content: space-between;
 }
 
-.rating, .dish-card__container, .cards, .menu__list, .header__container {
+.chef-card__header, .rating, .dish-card__container, .cards, .menu__list, .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -118,6 +118,14 @@ button {
   -webkit-animation-delay: 0.7s;
           animation-delay: 0.7s;
 }
+.animate_five {
+  -webkit-animation-delay: 0.9s;
+          animation-delay: 0.9s;
+}
+.animate_six {
+  -webkit-animation-delay: 1s;
+          animation-delay: 1s;
+}
 
 .animate__hidden {
   opacity: 0;
@@ -221,7 +229,7 @@ button {
           justify-content: space-between;
 }
 
-.rating, .dish-card__container, .cards, .menu__list, .header__container {
+.chef-card__header, .rating, .dish-card__container, .cards, .menu__list, .header__container {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -723,6 +731,40 @@ button {
   border-radius: 6px;
   background-color: #252525;
   max-width: 350px;
+  position: relative;
+  opacity: 0;
+}
+.dish-card__share {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+  position: absolute;
+  margin-left: 24px;
+  margin-right: 24px;
+  right: 0;
+  top: 24px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+.dish-card__share img {
+  position: relative;
+  z-index: 1;
+}
+.dish-card__share-bg {
+  position: absolute;
+  border-radius: 50%;
+  width: 100%;
+  height: 100%;
+  opacity: 0.3;
+  background-color: #000;
 }
 .dish-card__preview {
   width: 100%;
@@ -776,6 +818,17 @@ button {
 .dish-card__btn-for-order:hover {
   background-color: #307942;
 }
+.dish-card.animate__show {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-name: animate__fadeInUp;
+          animation-name: animate__fadeInUp;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
 
 .rating {
   max-width: 151px;
@@ -805,6 +858,61 @@ button {
   color: #4D4D4D;
 }
 
+.people-chefs {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-column-gap: 30px;
+}
+
+.chef-card {
+  opacity: 0;
+}
+.chef-card__header {
+  max-width: 205px;
+  margin-bottom: 24px;
+}
+.chef-card__avatar {
+  border-radius: 50%;
+  width: 65px;
+  height: 65px;
+  margin-right: 24px;
+}
+.chef-card__fullname {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 21px;
+  letter-spacing: -0.225px;
+  color: #FFFFFF;
+}
+.chef-card__subtitle {
+  font-size: 12px;
+  margin: 0;
+}
+.chef-card__portfolio {
+  max-width: 350px;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 30px 1fr 30px 1fr;
+  grid-template-columns: repeat(3, 1fr);
+  grid-gap: 30px;
+}
+.chef-card__portfolio img {
+  border-radius: 4px;
+}
+.chef-card.animate__show {
+  opacity: 0;
+  -webkit-animation-duration: 1s;
+          animation-duration: 1s;
+  -webkit-animation-timing-function: ease-in-out;
+          animation-timing-function: ease-in-out;
+  -webkit-animation-name: animate__fadeInUp;
+          animation-name: animate__fadeInUp;
+  -webkit-animation-fill-mode: forwards;
+          animation-fill-mode: forwards;
+}
+
 /* Content end */
 .brand {
   display: -webkit-box;
@@ -815,7 +923,7 @@ button {
           justify-content: space-between;
 }
 
-.header__container, .menu__list, .cards, .dish-card__container, .rating {
+.header__container, .menu__list, .cards, .dish-card__container, .rating, .chef-card__header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -828,14 +936,6 @@ button {
 }
 
 /* Adaptive start */
-@media screen and (max-width: 1143px) {
-  .work__cards {
-    -ms-grid-columns: 1fr 30px 1fr;
-    grid-template-columns: repeat(2, 1fr);
-    grid-auto-rows: auto;
-    justify-items: center;
-  }
-}
 @media screen and (max-width: 1051px) {
   .slider {
     height: 365px;
@@ -850,6 +950,27 @@ button {
   }
   .work-steps-card__subtitle {
     max-width: 207px;
+  }
+}
+@media screen and (max-width: 1143px) {
+  .work__cards {
+    -ms-grid-columns: 1fr 30px 1fr;
+    grid-template-columns: repeat(2, 1fr);
+    grid-auto-rows: auto;
+    justify-items: center;
+  }
+}
+@media screen and (max-width: 1136px) {
+  .people-chefs {
+    -ms-grid-columns: (1fr)[2];
+    grid-template-columns: repeat(2, 1fr);
+    grid-row-gap: 60px;
+    justify-items: center;
+  }
+  .chef-card:nth-child(3) {
+    -ms-grid-column: 1;
+    -ms-grid-column-span: 2;
+    grid-column: 1/3;
   }
 }
 @media screen and (max-width: 990px) {
@@ -881,6 +1002,16 @@ button {
     height: 420px;
     -o-object-fit: cover;
        object-fit: cover;
+  }
+}
+@media screen and (max-width: 828px) {
+  .people-chefs {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .chef-card:nth-child(3) {
+    -ms-grid-column: 1;
+    grid-column: 1/1;
   }
 }
 @media screen and (max-width: 822px) {
@@ -1192,6 +1323,22 @@ button {
   }
   .burger-menu__link {
     font-size: 25px;
+  }
+}
+@media screen and (max-width: 384px) {
+  .chefs__title {
+    font-size: 21px;
+  }
+  .chefs__title::before {
+    font-size: 76px;
+  }
+  .chef-card__portfolio {
+    -ms-grid-columns: 1fr;
+    grid-template-columns: 1fr;
+  }
+  .chef-card__portfolio img {
+    -ms-grid-column-align: center;
+        justify-self: center;
   }
 }
 @media screen and (max-width: 358px) {

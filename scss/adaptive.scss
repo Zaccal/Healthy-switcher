@@ -3,14 +3,6 @@
 /* Adaptive start */
 // with max width to min width
 
-@media screen and (max-width: 1143px) {
-    .work__cards {
-        grid-template-columns: repeat(2, 1fr);
-        grid-auto-rows: auto;
-        justify-items: center;
-    }
-}
-
 @media screen and (max-width: 1051px) {
     .slider {
         height: 365px;
@@ -28,6 +20,26 @@
 
     .work-steps-card__subtitle {
         max-width: 207px;
+    }
+}
+
+@media screen and (max-width: 1143px) {
+    .work__cards {
+        grid-template-columns: repeat(2, 1fr);
+        grid-auto-rows: auto;
+        justify-items: center;
+    }
+}
+
+@media screen and (max-width: 1136px) {
+    .people-chefs {
+        grid-template-columns: repeat(2, 1fr);
+        grid-row-gap: 60px;
+        justify-items: center;
+    }
+
+    .chef-card:nth-child(3) {
+        grid-column: 1/3;
     }
 }
 
@@ -62,6 +74,16 @@
         width: 100%;
         height: 420px;
         object-fit: cover;
+    }
+}
+
+@media screen and (max-width: 828px) {
+    .people-chefs {
+        grid-template-columns: 1fr;
+    }
+
+    .chef-card:nth-child(3) {
+        grid-column: 1/1;
     }
 }
 
@@ -448,6 +470,23 @@
 
     .burger-menu__link {
         font-size: 25px;
+    }
+}
+
+@media screen and (max-width: 384px) {
+    .chefs__title {
+        font-size: 21px;
+
+        &::before {
+            font-size: 76px;
+        }
+    }
+
+    .chef-card__portfolio {
+        grid-template-columns: 1fr;
+        & img {
+            justify-self: center;
+        }
     }
 }
 
