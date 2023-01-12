@@ -43,6 +43,19 @@
     }
 }
 
+@media screen and (max-width: 1009px) {
+    .recipes {
+        &-card-big__title {
+            font-size: 20px;
+            line-height: 36px;
+        }
+
+        &-card__title {
+            font-size: 14px;
+        }
+    }
+}
+
 @media screen and (max-width: 990px) {
     .intro__title {
         font-size: 62px;
@@ -54,6 +67,17 @@
     .dishe__cards {
         grid-template-columns: repeat(2, 1fr);
         justify-items: center;
+    }
+}
+
+@media screen and (max-width: 943px) {
+    .recipes__container {
+        grid-template-columns: 1fr;
+        grid-template-areas: 
+            "card-big"
+            "card-one"
+            "card-two"
+            "card-three ";
     }
 }
 
@@ -382,6 +406,17 @@
     }
 }
 
+@media screen and (max-width: 542px) {
+    .recipes__title {
+        font-size: 25px !important;
+        line-height: 85px !important;
+
+        &::before {
+            font-size: 89px !important;
+        }
+    }
+}
+
 @media screen and (max-width: 500px) {
     /* About section start */
 
@@ -404,11 +439,48 @@
     }
 }
 
+@media screen and (max-width: 477px) {
+    .recipes-card-big__title {
+        font-size: 18px;
+        line-height: 34px;
+    }
+
+    .recipes-card {
+        &__title {
+            font-size: 13px;
+            line-height: 27px;
+        }
+        &__container {
+            margin-top: 30px;
+            flex-direction: column ;
+        }
+
+        &__rating {
+            margin-top: 10px;
+        }
+        
+    }
+}
+
+@media screen and (max-width: 460px) {
+    .recipes__title {
+        font-size: 20px !important;
+        line-height: 80px !important;
+
+        &::before {
+            top: -31% !important;
+            font-size: 70px !important;
+        }
+    }
+}
+
 @media screen and (max-width: 458px) {
     .title {
-        font-size: 26px;
+        font-size: 25px !important;
+        line-height: 36px !important;
         &::before {
-            font-size: 80px;
+            top: -42% !important;
+            font-size: 75px !important;
         }
     }
 }
@@ -439,6 +511,13 @@
         &__subtitle {
             font-size: 15px;
         }
+    }
+}
+
+@media screen and (max-width: 422px) {
+    .recipes-card-big__title {
+        font-size: 16px;
+        line-height: 32px;
     }
 }
 
@@ -486,6 +565,16 @@
         grid-template-columns: 1fr;
         & img {
             justify-self: center;
+        }
+    }
+}
+
+@media screen and (max-width: 375px) {
+    .recipes__title {
+        line-height: 34px !important;
+        &::before {
+            top: -53%;
+            font-size: 60px !important;
         }
     }
 }
