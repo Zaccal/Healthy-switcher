@@ -152,6 +152,18 @@
     }
 }
 
+@media screen and (max-width: 732px) {
+    .footer__container {
+        grid-template-columns: 1fr;
+        justify-content: center;
+        grid-row-gap: 40px;
+
+        & > div {
+            margin: 0 !important;
+        }
+    }
+}
+
 @media screen and (max-wdith: 700px) {
     .intro__title {
         font-size: 52px;
@@ -653,6 +665,13 @@
         font-size: 36px;
         line-height: 48px;
     }
+
+    .dishe__title {
+        font-size: 23px;
+        &::before {
+            font-size: 74px;
+        }
+    }
 }
 
 @media screen and (max-width: 356px) {
@@ -665,6 +684,18 @@
             width: 100%;
             margin-top: 10px;
         }
+    }
+
+    .dish-card__subtitle {
+        margin: 20px auto 22px;
+    } 
+
+    .recipes-card-big__title {
+        line-height: 28px;
+    }
+
+    .social-card__content-texts {
+        line-height: 27px;
     }
 }
 
@@ -681,12 +712,13 @@
     }
 }
 
-@media screen and (max-width: 330px) {
-    .dishe__title {
-        font-size: 23px;
-        &::before {
-            font-size: 74px;
-        }
+@media screen and (max-width: 340px) {
+    .footer .brand {
+        margin-bottom: 20px;
+    }
+
+    .footer__copyright {
+        line-height: 20px;
     }
 }
 

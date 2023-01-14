@@ -20,6 +20,7 @@
 .brand {
     @extend %cfg-flex;
     align-items: flex-end;
+    max-width: 209px;
 
     & .brand__text {
         text-transform: uppercase;
@@ -222,7 +223,6 @@
             letter-spacing: 0.2em;
             color: #303030;
             position: absolute;
-            // left: calc(50% - 351px/2);
             left:50%;
             top: -40px;
             transform: translateX(-50%);
@@ -874,6 +874,39 @@
 
     &.animate__show {
         @include cfg-animate(animate__fadeInUp);
+    }
+}
+
+.footer {
+    text-align: center;
+    margin-top: 120px;
+    padding: 32px 0 30px;
+    background-color: $darkGray;
+
+    &__header {
+        border-bottom: 2px solid #303030; 
+        padding-bottom: 30px;
+    }
+
+    & .brand {
+        margin: 38px auto 5px;
+    }
+
+    &__copyright {
+        font-weight: 400;
+        font-size: 12px;
+        line-height: 60px;
+        color: #737373;
+    }
+}
+
+.footer__container {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+
+    & > div {
+        opacity: 1;
+        transform: none;
     }
 }
 
