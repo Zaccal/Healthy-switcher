@@ -3,26 +3,6 @@
 /* Adaptive start */
 // with max width to min width
 
-@media screen and (max-width: 1051px) {
-    .slider {
-        height: 365px;
-
-        &__btn {
-            width: 45px;
-            height: 45px;
-            top: calc(40% - 35px);
-        }
-
-        &__pagination {
-            display: block;
-        }
-    }
-
-    .work-steps-card__subtitle {
-        max-width: 207px;
-    }
-}
-
 @media screen and (max-width: 1143px) {
     .work__cards {
         grid-template-columns: repeat(2, 1fr);
@@ -40,6 +20,34 @@
 
     .chef-card:nth-child(3) {
         grid-column: 1/3;
+    }
+}
+
+@media screen and (max-width: 1100px) {
+    .social__container {
+        grid-template-columns: repeat(2, minmax(auto, 350px));
+        justify-content: center;
+    }
+
+}
+
+@media screen and (max-width: 1051px) {
+    .slider {
+        height: 365px;
+
+        &__btn {
+            width: 45px;
+            height: 45px;
+            top: calc(40% - 35px);
+        }
+
+        &__pagination {
+            display: block;
+        }
+    }
+
+    .work-steps-card__subtitle {
+        max-width: 207px;
     }
 }
 
@@ -115,6 +123,12 @@
     .intro__title {
         font-size: 52px;
         line-height: 64px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .social__container {
+        grid-template-columns: minmax(auto, 450px);
     }
 }
 
@@ -427,6 +441,16 @@
     /* About section end */
 }
 
+@media screen and (max-width: 490px) {
+    .social__title {
+        font-size: 25px;
+
+        &::before {
+            font-size: 89px;
+        }
+    }
+}
+
 @media screen and (max-width: 482px) {
     .brand__logo-img {
         & .brand__text {
@@ -436,6 +460,11 @@
     
     .burger-menu__link {
         font-size: 27px;
+    }
+
+    .social-card__content-texts {
+        font-size: 12px;
+        line-height: 28px;
     }
 }
 
@@ -447,7 +476,7 @@
 
     .recipes-card {
         &__title {
-            font-size: 13px;
+            font-size: 13.5px;
             line-height: 27px;
         }
         &__container {
@@ -475,7 +504,7 @@
 }
 
 @media screen and (max-width: 458px) {
-    .title {
+    .recipes__title {
         font-size: 25px !important;
         line-height: 36px !important;
         &::before {
@@ -518,6 +547,12 @@
     .recipes-card-big__title {
         font-size: 16px;
         line-height: 32px;
+    }
+}
+
+@media screen and (max-width: 415px) {
+    .social__title::before {
+        font-size: 78px;
     }
 }
 
@@ -595,6 +630,22 @@
     }
     
     /* About section end */
+
+    .social__title::before {
+        font-size: 72px;
+    }
+
+    .social-card__header-container {
+        flex-direction: column;
+        & button {
+            width: 100%;
+            margin-top: 20px;
+        }
+    }
+
+    .social-card__social-icon {
+        margin-right: 10px;
+    }
 }
 
 @media screen and (max-width: 374px) {
