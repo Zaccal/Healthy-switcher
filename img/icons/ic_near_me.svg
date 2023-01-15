@@ -1,22 +1,24 @@
-<svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_2_183" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="4" y="0" width="18" height="18">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M22 0L4 7.53V8.51L10.84 11.16L13.48 18H14.46L22 0Z" fill="white"/>
-</mask>
-<g mask="url(#mask0_2_183)">
-<g filter="url(#filter0_d_2_183)">
-<rect y="-4" width="26" height="26" fill="white" fill-opacity="0.5"/>
-</g>
-</g>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="px" height="px" viewBox="0 0 13 13" version="1.1">
 <defs>
-<filter id="filter0_d_2_183" x="-4" y="-4" width="34" height="34" filterUnits="userSpaceOnUse" color-interpolation-filters="sRGB">
-<feFlood flood-opacity="0" result="BackgroundImageFix"/>
-<feColorMatrix in="SourceAlpha" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 127 0" result="hardAlpha"/>
-<feOffset dy="4"/>
-<feGaussianBlur stdDeviation="2"/>
-<feComposite in2="hardAlpha" operator="out"/>
-<feColorMatrix type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0.25 0"/>
-<feBlend mode="normal" in2="BackgroundImageFix" result="effect1_dropShadow_2_183"/>
-<feBlend mode="normal" in="SourceGraphic" in2="effect1_dropShadow_2_183" result="shape"/>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
 </filter>
+<image id="image19" width="13" height="13" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAABmJLR0QA/wD/AP+gvaeTAAAAr0lEQVQokWNgIAD+3y5k//+HOfT/74W9MDEmnIq/lUr///2/gUHx+mMGBoZVDP/PX8SukIGZ8f/vwy7//zCv+v+H//f/P8z/Idjl9f/7jzkwNfxqK/z/u/UWQiES/n24A1ktwnmM3xgZGER/Y9rP+Zfhj8UM/B7/XWP5//f/Awhb/Dfh1YCiEa5phRtRmiAaZ139/6fx9v+GZowQZsGt7fx8hn9GvxkbUv8RbdMQBgAABW8ejjwauwAAAABJRU5ErkJggg=="/>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<use xlink:href="#image19"/>
+  </g>
+</mask>
+<image id="image15" width="13" height="13" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA0AAAANCAYAAABy6+R8AAAABmJLR0QA/wD/AP+gvaeTAAAAIElEQVQokWP8//9/AwOJgIlUDaOahrkmRgYGBnu62AQAmlgD1bpjMzQAAAAASUVORK5CYII="/>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="13" height="13"/>
+</clipPath>
+<g id="surface18" clip-path="url(#clip1)">
+<use xlink:href="#image15"/>
+</g>
 </defs>
+<g id="surface1">
+<use xlink:href="#surface18" mask="url(#mask0)"/>
+</g>
 </svg>

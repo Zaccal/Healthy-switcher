@@ -1,8 +1,23 @@
-<svg width="16" height="16" viewBox="0 0 16 16" fill="none" xmlns="http://www.w3.org/2000/svg">
-<mask id="mask0_2_234" style="mask-type:alpha" maskUnits="userSpaceOnUse" x="0" y="0" width="16" height="16">
-<path fill-rule="evenodd" clip-rule="evenodd" d="M0 7H12.17L6.58 1.41L8 0L16 8L8 16L6.59 14.59L12.17 9H0V7Z" fill="white"/>
+<?xml version="1.0" encoding="UTF-8"?>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="px" height="px" viewBox="0 0 8 8" version="1.1">
+<defs>
+<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
+  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
+</filter>
+<image id="image7" width="8" height="8" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAgAAAAICAYAAADED76LAAAABmJLR0QA/wD/AP+gvaeTAAAAWElEQVQYlWNgQAL/fx3P/v/7fwMDLvD/s4bo/98rLv3/fbiDaEUs/3/7lGMq+7mbgdGt9P/v/z9YGBjKBTHkGasEGRh+MRGwgr2eNEkGBgaG/7/uZaJ7EwBkDjqqS5+prQAAAABJRU5ErkJggg=="/>
+<mask id="mask0">
+  <g filter="url(#alpha)">
+<use xlink:href="#image7"/>
+  </g>
 </mask>
-<g mask="url(#mask0_2_234)">
-<rect width="26" height="26" transform="matrix(-1 0 0 1 21 -5)" fill="#4D4D4D"/>
+<clipPath id="clip1">
+  <rect x="0" y="0" width="8" height="8"/>
+</clipPath>
+<g id="surface6" clip-path="url(#clip1)">
+<rect x="0" y="0" width="8" height="8" style="fill:rgb(30.196078%,30.196078%,30.196078%);fill-opacity:1;stroke:none;"/>
+</g>
+</defs>
+<g id="surface1">
+<use xlink:href="#surface6" mask="url(#mask0)"/>
 </g>
 </svg>
