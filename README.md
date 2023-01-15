@@ -1,7 +1,5 @@
 <h1 align="center">Healthy-switcher</h1>
 
-<hr />
-
 <p align="center">
     The "Healthy Switcher" web page project is a comprehensive resource for individuals looking to improve their health and wellbeing. The project utilizes a combination of HTML, CSS, JavaScript, SCSS, and markdown to create a visually appealing and user-friendly website.
 </p>
@@ -13,4 +11,4 @@
 <br />
 <br />
 
-<img align="center" alt="preview web page" src="./img/background/Preview.jpg"/>
+<img align="center" alt="preview web page" src="./img/background/Preview.png"/>
