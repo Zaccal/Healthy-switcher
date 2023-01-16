@@ -1,24 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="px" height="px" viewBox="0 0 14 14" version="1.1">
-<defs>
-<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
-  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
-</filter>
-<image id="image19" width="14" height="14" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABmJLR0QA/wD/AP+gvaeTAAAA4UlEQVQokd2SwQoBYRSFbwallFewUpMpCw+AhSewt1RmLLyCDTs2FvIeFizsZCULG1lQZD01lLiXYzH5p5nJlK1bZ3H/znfrnv8SBQpsV8DZGUS/QPQLODcFoxz0+aHH0oIkXxANfqWeeOybX6B2AZIWZebzAtI4enCGcV8bH39MkbGTRXTTvFHanDA8eP01TtqgFQZhFSP3ICKCqTweSAn4XZ080bBH6O6ih0ltHAqF+1vwpAqer9y3+igMBsNRSr5c+cMJwBsTknr+9B0KZrsCzk0hhgMxHPcAMqVI6E/rDfy4vtIt1DxDAAAAAElFTkSuQmCC"/>
-<mask id="mask0">
-  <g filter="url(#alpha)">
-<use xlink:href="#image19"/>
-  </g>
+<svg width="21" height="20" viewBox="0 0 21 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_2_190" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="0" y="0" width="21" height="20">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M10.5 0C4.97746 0 0.459015 4.5 0.459015 10C0.459015 15.5 4.97746 20 10.5 20C16.0225 20 20.541 15.5 20.541 10C20.541 4.5 16.0225 0 10.5 0ZM14.7172 14.2L9.4959 11V5H11.0021V10.2L15.5205 12.9L14.7172 14.2Z" fill="white"/>
 </mask>
-<image id="image15" width="14" height="14" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAA4AAAAOCAYAAAAfSC3RAAAABmJLR0QA/wD/AP+gvaeTAAAAOUlEQVQokWP8//+/OgMDQyQDaWA5E4ka4GBU4wjXyMLHx/f606dPB0jRxMfH95qRgYHBnhwbyXYqAIXyCkDAm7m4AAAAAElFTkSuQmCC"/>
-<clipPath id="clip1">
-  <rect x="0" y="0" width="14" height="14"/>
-</clipPath>
-<g id="surface18" clip-path="url(#clip1)">
-<use xlink:href="#image15"/>
-</g>
-</defs>
-<g id="surface1">
-<use xlink:href="#surface18" mask="url(#mask0)"/>
+<g mask="url(#mask0_2_190)">
+<rect x="-2.55328" y="-3" width="26.1066" height="26" fill="white" fill-opacity="0.5"/>
 </g>
 </svg>

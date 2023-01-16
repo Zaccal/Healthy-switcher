@@ -1,23 +1,8 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="px" height="px" viewBox="0 0 12 12" version="1.1">
-<defs>
-<filter id="alpha" filterUnits="objectBoundingBox" x="0%" y="0%" width="100%" height="100%">
-  <feColorMatrix type="matrix" in="SourceGraphic" values="0 0 0 0 1 0 0 0 0 1 0 0 0 0 1 0 0 0 1 0"/>
-</filter>
-<image id="image7" width="12" height="12" xlink:href="data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAMCAYAAABWdVznAAAABmJLR0QA/wD/AP+gvaeTAAAAfElEQVQokWNgGDDw/wwzK2kafjEb//99uIM4xb/57f//8Zjz/w/z//+//zfgVvjCiPv/b8/N//8w/0fBPx+EY9fwx2I+RFHck/+/Z12F2JC5Dqt//v8q0P//23br/5/ndRB+wKGYgYGB4f/PPr3/Dc1McP47Zn6SQ2pgAABpM1OM5OHGcQAAAABJRU5ErkJggg=="/>
-<mask id="mask0">
-  <g filter="url(#alpha)">
-<use xlink:href="#image7"/>
-  </g>
+<svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+<mask id="mask0_4_394" style="mask-type:luminance" maskUnits="userSpaceOnUse" x="4" y="5" width="16" height="13">
+<path fill-rule="evenodd" clip-rule="evenodd" d="M13.6 8.79998V5.59998L19.2 11.2L13.6 16.8V13.52C9.60001 13.52 6.80001 14.8 4.80001 17.6C5.60001 13.6 8.00001 9.59998 13.6 8.79998Z" fill="white"/>
 </mask>
-<clipPath id="clip1">
-  <rect x="0" y="0" width="12" height="12"/>
-</clipPath>
-<g id="surface6" clip-path="url(#clip1)">
-<path style=" stroke:none;fill-rule:nonzero;fill:rgb(100%,100%,100%);fill-opacity:1;" d="M 0.800781 0.800781 L 11.199219 0.800781 L 11.199219 11.199219 L 0.800781 11.199219 Z M 0.800781 0.800781 "/>
-</g>
-</defs>
-<g id="surface1">
-<use xlink:href="#surface6" mask="url(#mask0)"/>
+<g mask="url(#mask0_4_394)">
+<rect x="1.60001" y="1.59998" width="20.8" height="20.8" fill="white"/>
 </g>
 </svg>
