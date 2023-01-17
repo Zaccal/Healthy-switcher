@@ -454,6 +454,7 @@ button {
 }
 .benefits-card__title {
   margin-bottom: 10px;
+  font-size: 16px;
   font-weight: 400;
   font-family: "Helvetica roman 55", sans-serif;
 }
